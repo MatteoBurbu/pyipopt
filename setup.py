@@ -13,8 +13,10 @@
 # so by the time you read this the bugs have probably been fixed
 # and you will want to specify a different directory here.
 IPOPT_DIR = '/usr/local/'
-# Other changes you may have to do are on lines 53 to 57. 
+# Other changes you may have to do are on lines 55 to 59. 
 # They consist in removing the coin prefix (e.g. 'coinlapack' -> 'lapack')
+# Another change is line 42, IPOPT_INC = os.path.join(IPOPT_DIR, 'include/coin/'). 
+# You might have to to change it in IPOPT_INC = os.path.join(IPOPT_DIR, 'include/coin-or/')
 
 import os
 from distutils.core import setup
