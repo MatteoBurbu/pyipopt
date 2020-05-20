@@ -13,6 +13,8 @@
 # so by the time you read this the bugs have probably been fixed
 # and you will want to specify a different directory here.
 IPOPT_DIR = '/usr/local/'
+# Other changes you may have to do are on lines 53 to 57. 
+# They consist in removing the coin prefix (e.g. 'coinlapack' -> 'lapack')
 
 import os
 from distutils.core import setup
